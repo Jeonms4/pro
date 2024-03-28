@@ -1,0 +1,13 @@
+package sec02;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class FilterEx {
+	public static void main(String args[]) {
+		List<String> arrList = new ArrayList<String>();
+		arrList.add("홍길동");
+		arrList.add("홍길동");
+		arrList.add("홍길동");
+	}
+}

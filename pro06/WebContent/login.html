@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인창</title>
+</head>
+<body>
+	<script>
+		function getOver() {
+			location.href = "http://www.daum.net";
+		}
+		function fn_validate() {
+			let name=document.form1.id.value;
+			console.log(name);
+			if(name.length==0|| name==='' || password.length==0 || password==='') {
+				alert("아이디 반드시 넣으세요.");
+			} else {
+				form1.method="post";
+				form1.action="login1";
+				form1.submit();
+			}
+				
+		}
+		
+	</script>
+	<form name ="form1" method="post" action="login1">
+		아이디 :<input type="text" name="id"><br> 패스워드:<input
+			type="password" name="password"><br> <input
+			type="submit" value="로그인"> <input type="reset" value="취소">
+			<input type="hidden" value="맛있는것" name="hid">
+		<input type="button" value="다음으로 가자" onclick="getOver()">
+	</form>
+	<button id="btn1">네이버로 가자</button>
+
+	<script>
+		let btn1 = document.getElementById("btn1");
+		btn1.addEventListener("click", function() {
+			location.href="http://www.naver.com"
+		})
+	</script>
+</body>
+</html>
+
+

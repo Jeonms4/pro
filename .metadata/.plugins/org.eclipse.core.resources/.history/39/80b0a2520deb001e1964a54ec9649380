@@ -1,0 +1,7 @@
+package sec02;
+
+public class FilterEx {
+	public static void main(String args[]) {
+		
+	}
+}

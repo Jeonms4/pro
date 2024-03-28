@@ -1,0 +1,103 @@
+package com.spring.ex01;
+
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller(value = "mainController")  // id는 mainController
+@RequestMapping(value="/yahoyaho/*")
+public class MainController {
+	@RequestMapping(value ="/hi.do", method = RequestMethod.GET)
+	public ModelAndView main1(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		ModelAndView mav =new ModelAndView();
+		mav.addObject("age", 33);
+		mav.addObject("color", "파란색");
+		mav.setViewName("main");
+		
+		Student stu1 = new Student();
+		stu1.setBan(1);
+		stu1.setName("홍길동");
+		
+		mav.addObject("student", stu1);
+		
+		Student stu2 = new Student(7, "홍이동");
+		
+		mav.addObject("student2", stu2);
+		
+		return mav;
+	}
+	
+	@RequestMapping(value = "/hi2.do")
+	public ModelAndView main2(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		ModelAndView mav =new ModelAndView();
+		mav.setViewName("main2");
+		return mav;
+	}
+	
+	@RequestMapping(value = "hi3.do")
+	public ModelAndView main3(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		ModelAndView mav =new ModelAndView();
+		mav.setViewName("dkssud");
+		return mav;
+	}
+	
+	@RequestMapping(value = "/yaho/hi4.do")
+	public ModelAndView main4(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		ModelAndView mav =new ModelAndView();
+		mav.setViewName("hi4");
+		return mav;
+	}
+	
+	@RequestMapping(value = "/loginForm.do")
+	public ModelAndView loginForm(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		ModelAndView mav =new ModelAndView();
+		mav.setViewName("login");
+		return mav;
+	}
+	
+//	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
+//	public ModelAndView login(@RequestParam(value = "id", required = false) String id, @RequestParam(required = false) String password, HttpServletRequest request, HttpServletResponse response) throws Exception {
+//		ModelAndView mav =new ModelAndView();
+//		
+//		System.out.println(id);
+//		System.out.println(password);
+//		mav.addObject("id", id);
+//		mav.setViewName("loginResult");
+//		return mav;
+//	}
+	
+//	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
+//	public ModelAndView login(@RequestParam Map<String, String> info, HttpServletRequest request, HttpServletResponse response) throws Exception {
+//		ModelAndView mav =new ModelAndView();
+//		System.out.println(info);
+//		System.out.println(info.get("id"));
+//		System.out.println(info.get("password"));
+//		mav.addObject("info", info);
+//		mav.setViewName("loginResult");
+//		return mav;
+//	}
+	
+//	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
+//	public ModelAndView login(Student stu, HttpServletRequest request, HttpServletResponse response) throws Exception {
+//		ModelAndView mav =new ModelAndView();
+//		System.out.println(stu);
+//		stu.setBan(5);
+//		mav.addObject("stu", stu);
+//		mav.setViewName("loginResult");
+//		return mav;
+	
+	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
+	public ModelAndView login(@ModelAttribute("kkk") LoginVO loginVo, HttpServletRequest request, HttpServletResponse response) throws Exception {
+		ModelAndView mav =new ModelAndView();
+		
+		return mav;
+	}
+}

@@ -1,0 +1,10 @@
+package com.spring.ex01;
+
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.FileSystemResource;
+
+public class SpringTest {
+	public static void main(String args[]) {
+		new XmlBeanFactory(new FileSystemResource("Person.xml"));
+	}
+}

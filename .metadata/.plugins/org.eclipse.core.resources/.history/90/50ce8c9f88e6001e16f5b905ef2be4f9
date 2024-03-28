@@ -1,0 +1,34 @@
+package com.spring.ex01;
+
+import lombok.Data;
+
+@Data
+public class Student {
+	private int ban;
+	private String name;
+	public int getBan() {
+		return ban;
+	}
+	
+	public void setBan() {
+		this.ban = ban;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName() {
+		this.name = name;
+	}
+	
+public Student() {
+		
+	}
+
+	public Student(int ban, String name) {
+		super();
+		this.ban = ban;
+		this.name = name;
+	}
+}

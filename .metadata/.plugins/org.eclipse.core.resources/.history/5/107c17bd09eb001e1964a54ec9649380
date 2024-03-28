@@ -1,0 +1,5 @@
+package sec02;
+
+public class ArrToStreamEx {
+	String strArr[] = {"홍길동", "홍이동", "홍삼동"};
+}

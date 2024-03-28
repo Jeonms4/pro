@@ -1,0 +1,12 @@
+package sec01;
+
+public class Product {
+	private int pno;
+	private String name;
+	private String company;
+	private int price;
+	
+	public String toString() {
+		
+	}
+}

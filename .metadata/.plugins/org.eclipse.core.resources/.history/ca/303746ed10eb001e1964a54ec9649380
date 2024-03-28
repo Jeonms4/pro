@@ -1,0 +1,7 @@
+package sec02;
+
+public class MapEx {
+	public static void main(String args[]) {
+		int intArr[] = {1, 2, 3, 4, 5};
+	}
+}

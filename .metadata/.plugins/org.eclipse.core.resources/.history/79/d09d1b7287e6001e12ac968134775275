@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+안녕 여기는 ${age}
+<br>
+색깔은 ${color }
+반은 ${ban }
+학생 이름은 ${name}
+</body>
+</html>

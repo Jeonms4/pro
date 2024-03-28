@@ -1,0 +1,18 @@
+package sec04;
+
+public class Member {
+	private String id;
+	private String name;
+
+	public Member() {
+
+	}
+
+	public Member() {
+
+	}
+
+	public Member() {
+
+	}
+}

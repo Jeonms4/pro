@@ -1,0 +1,8 @@
+package ch17;
+
+public class Ex7 {
+	public static void main(String args[]) {
+		List<Member> list = Arrays.asList(
+				 new Member("홍길동", "개발자"),
+	}
+}

@@ -1,0 +1,15 @@
+package ex;
+
+public class Ex1 {
+
+	public static void main(String[] args) {
+		// 1. 4 선택사항임
+		// 2. 4  매개변수 타입과 가지고 있는 생성자를 찾아 실행함
+		// 3. 2
+		// 4. 
+		for (int i = 0; i < 3; i++) {
+            System.out.println("작업 스레드가 실행됩니다.");
+        }
+	}
+
+}

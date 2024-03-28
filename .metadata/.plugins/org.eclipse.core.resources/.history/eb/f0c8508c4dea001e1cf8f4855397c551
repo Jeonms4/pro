@@ -1,0 +1,20 @@
+package sec01;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@Getter
+@AllArgsConstructor
+public class Product {
+	private int pno;
+	private String name;
+	private String company;
+	private int price;
+	
+	public String toString() {
+		return new StringBuilder().append("{")
+				.append("pno" + pno + ",")
+				.append("")
+				.append("");
+	}
+}

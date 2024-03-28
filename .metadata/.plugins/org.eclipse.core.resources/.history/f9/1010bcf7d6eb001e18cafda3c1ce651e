@@ -1,0 +1,15 @@
+package sec03;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ReductionTest {
+
+	public static void main(String[] args) {
+		List<Student> stuList = new ArrayList<>();
+		stuList.add(new Student("홍일동", 0));
+		stuList.add(new Student("홍일동", 0));
+		stuList.add(new Student("홍일동", 0));
+	}
+
+}

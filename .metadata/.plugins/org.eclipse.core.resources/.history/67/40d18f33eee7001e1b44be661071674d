@@ -1,0 +1,9 @@
+package sec01;
+
+public class Person {
+	void action(Workable workable) {
+		// 1) 매개 변수 X, return X
+//		workable.work();
+		workable.work("과자");
+	}
+}

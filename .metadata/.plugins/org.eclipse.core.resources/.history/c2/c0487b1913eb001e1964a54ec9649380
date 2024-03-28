@@ -1,0 +1,19 @@
+package sec02;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+public class Student implements Comparable<T>{
+	private String name;
+	private int score;
+	
+	public Student(String name, int score) {
+		super();
+		this.name = name;
+		this.score = score;
+	}
+	
+	public int compareTO(Student stu) {
+		
+	}
+}
